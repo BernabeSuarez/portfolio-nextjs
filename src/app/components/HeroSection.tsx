@@ -6,11 +6,11 @@ import { TypeAnimation } from "react-type-animation";
 export default function Hero() {
   // eslint-disable-next-line react/no-unescaped-entities
   return (
-    <section className="lg:py-16">
+    <section className="p-16 ">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-12">
-        <div className=" col-span-7 place-self-center">
+        <div className=" col-span-8 place-self-center">
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold text-center lg:text-left">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to bg-pink-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBE98] to bg-[#E45400]">
               Hello I`m{" "}
             </span>
             <br />
@@ -38,10 +38,10 @@ export default function Hero() {
             id.
           </p>
           <div>
-            <button className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white mb-6 mt-6">
+            <button className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6">
               Contactarme
             </button>
-            <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
+            <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#FFBE98] via-[#E45400] to bg-[#F24949]  text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Descargar CV
               </span>
