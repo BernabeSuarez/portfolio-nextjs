@@ -6,8 +6,8 @@ import { TypeAnimation } from "react-type-animation";
 export default function Hero() {
   // eslint-disable-next-line react/no-unescaped-entities
   return (
-    <section className="p-16 ">
-      <div className="grid grid-cols-1 sm:grid-cols-12 gap-12">
+    <section className="lg:py-16">
+      <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className=" col-span-8 place-self-center">
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold text-center lg:text-left">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBE98] to bg-[#E45400]">
@@ -48,16 +48,14 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative sm:ml-10">
-          <div className="flex rounded-full justify-items-center">
-            <Image
-              src="/images/hero-image.jpg"
-              alt="Hero Image"
-              className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
-            />
-          </div>
+        <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mt-5">
+          <Image
+            src="/images/hero-image.jpg"
+            alt="Hero Image"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full "
+            width={300}
+            height={300}
+          />
         </div>
       </div>
     </section>
