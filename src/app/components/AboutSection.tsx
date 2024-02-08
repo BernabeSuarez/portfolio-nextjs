@@ -40,7 +40,7 @@ const AboutSection = () => {
     setShowTab(id);
   }
   return (
-    <section className="text-white">
+    <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap sm:py-16 xl:py-16">
         <Image
           src="/images/about-section-img.jpg"
