@@ -81,7 +81,7 @@ const AboutSection = () => {
               </span>
             </div>
             <div className="mt-3">
-              {info.find((t) => t.id === showTab).content}
+              {info.find((t) => t.id === showTab)?.content}
             </div>
           </div>
         </div>
