@@ -69,6 +69,7 @@ const ContactSection = () => {
             Email
           </label>
           <input
+            name="email"
             type="email"
             id="email"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -81,6 +82,7 @@ const ContactSection = () => {
             Subject
           </label>
           <input
+            name="subject"
             type="text"
             id="subject"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -93,6 +95,7 @@ const ContactSection = () => {
             Message
           </label>
           <textarea
+            name="message"
             id="message"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder="Let`s talk about..."
