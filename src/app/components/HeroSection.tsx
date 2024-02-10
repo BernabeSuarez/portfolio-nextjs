@@ -2,13 +2,19 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   // eslint-disable-next-line react/no-unescaped-entities
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className=" col-span-8 place-self-center">
+        <motion.div
+          initial={{ opacity: 0, x: 70 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className=" col-span-8 place-self-center"
+        >
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold text-center lg:text-left">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBE98] to bg-[#E45400]">
               Hello I`m{" "}
@@ -47,8 +53,13 @@ export default function Hero() {
               </span>
             </button>
           </div>
-        </div>
-        <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mt-5">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mt-5"
+        >
           <Image
             src="/images/hero-image.jpg"
             alt="Hero Image"
@@ -56,7 +67,7 @@ export default function Hero() {
             width={300}
             height={300}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

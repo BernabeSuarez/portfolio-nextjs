@@ -20,7 +20,7 @@ const ProjectCard = (carData: ICardData) => {
             height={300}
           />
         </div>
-        <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+        <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out p-2 group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110 ">
           <h2 className="font-serif text-2xl font-bold text-white shadow-xl">
             {carData.title}
           </h2>
