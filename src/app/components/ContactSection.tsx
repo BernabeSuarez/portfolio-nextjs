@@ -1,40 +1,18 @@
-"use client";
-
 import LinkedInIcon from "../../../public/linkedin-icon.png";
 import GithubIcon from "../../../public/github-icon.png";
-import Link from "next/link";
 import Image from "next/image";
+import { sendMail } from "../lib/mail";
 
-const handleSubmit = async (e: any) => {
-  e.preventDefault();
+const handleSubmit = async (formData: FormData) => {
+  "use server";
   //Tomar los datos del Form
-  const data = {
-    email: e.target.email.value,
-    subject: e.target.subject.value,
-    message: e.target.message.value,
-  };
-  const JSONdata = JSON.stringify(data);
-  const endpoint = "/api/send";
 
-  // Form the request for sending data to the server.
-  const options = {
-    // The method is POST because we are sending data.
-    method: "POST",
-    // Tell the server we're sending JSON.
-    headers: {
-      "Content-Type": "application/json",
-    },
-    // Body of the request is the JSON data we created above.
-    body: JSONdata,
-  };
-
-  const response = await fetch(endpoint, options);
-  const resData = await response.json();
-  console.log(resData);
-
-  if (response.status === 200) {
-    console.log("Message sent.");
-  }
+  await sendMail({
+    email: formData.get("email") as string,
+    name: formData.get("name") as string,
+    subject: formData.get("subject") as string,
+    message: formData.get("message") as string,
+  });
 };
 
 const ContactSection = () => {
@@ -64,7 +42,20 @@ const ContactSection = () => {
         </div>
       </div>
       <div>
-        <form action="" onSubmit={handleSubmit} className="flex flex-col gap-2">
+        <form action={handleSubmit} className="flex flex-col gap-2">
+          <label
+            htmlFor="name"
+            className="text-white block text-sm font-medium"
+          >
+            Name
+          </label>
+          <input
+            name="name"
+            type="text"
+            id="name"
+            className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            placeholder="Nombre"
+          />
           <label
             htmlFor="email"
             className="text-white block text-sm font-medium"
@@ -76,7 +67,7 @@ const ContactSection = () => {
             type="email"
             id="email"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-            placeholder="Example@mail.com"
+            placeholder="Tu email"
           />
           <label
             htmlFor="subject"
