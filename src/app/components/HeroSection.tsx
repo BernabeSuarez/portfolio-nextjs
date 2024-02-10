@@ -45,11 +45,17 @@ export default function Hero() {
           </p>
           <div>
             <a href="https://wa.me/5492364513422" target="_blank">
-              <button className="px-6 inline-block py-3 w-full sm:w-fit  sm:rounded-xl rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6">
+              <button
+                id="contact-btn"
+                className="px-6 inline-block py-3 w-full sm:w-fit  sm:rounded-xl rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6"
+              >
                 Contactarme
               </button>
             </a>
-            <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full md:rounded-xl bg-gradient-to-br from-[#FFBE98] via-[#E45400] to bg-[#F24949]  text-white mt-3">
+            <button
+              id="dwnl-cv"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full md:rounded-xl bg-gradient-to-br from-[#FFBE98] via-[#E45400] to bg-[#F24949]  text-white mt-3"
+            >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full md:rounded-lg px-5 py-2">
                 Descargar CV
               </span>

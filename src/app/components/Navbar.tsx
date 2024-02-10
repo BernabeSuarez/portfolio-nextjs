@@ -35,6 +35,7 @@ const Navbar = () => {
         <div className="mobile-menu block md:hidden">
           {!openNav ? (
             <button
+              id="hamb-menu-open"
               onClick={() => setOpenNav(true)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:border-white hover:text-white"
             >
@@ -42,6 +43,7 @@ const Navbar = () => {
             </button>
           ) : (
             <button
+              id="hamb-menu-close"
               onClick={() => setOpenNav(false)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:border-white hover:text-white"
             >
