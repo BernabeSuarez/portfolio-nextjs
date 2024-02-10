@@ -41,7 +41,7 @@ const ContactSection = () => {
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
       <div className="mb-12">
-        <h5 className="text-xl font-bold my-2 text-white">Let`s Connect</h5>
+        <h2 className="text-xl font-bold my-2 text-white">Let`s Connect</h2>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod
           blanditiis laboriosam tempora eligendi suscipit? Perferendis
