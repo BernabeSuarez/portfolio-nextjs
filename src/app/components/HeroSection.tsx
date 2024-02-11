@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   // eslint-disable-next-line react/no-unescaped-entities
   return (
     <section className="lg:py-16">
@@ -17,7 +19,7 @@ export default function Hero() {
         >
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold text-center lg:text-left">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBE98] to bg-[#E45400]">
-              Hello I`m{" "}
+              {t("title")}{" "}
             </span>
             <br />
             <TypeAnimation
@@ -49,7 +51,7 @@ export default function Hero() {
                 id="contact-btn"
                 className="px-6 inline-block py-3 w-full sm:w-fit  sm:rounded-xl rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6"
               >
-                Contactarme
+                {t("btnContact")}
               </button>
             </a>
             <a
@@ -61,7 +63,7 @@ export default function Hero() {
                 className="px-1 inline-block py-1 w-full sm:w-fit rounded-full md:rounded-xl bg-gradient-to-br from-[#FFBE98] via-[#E45400] to bg-[#F24949]  text-white mt-3"
               >
                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full md:rounded-lg px-5 py-2">
-                  Descargar CV
+                  {t("btnDownload")}
                 </span>
               </button>
             </a>
