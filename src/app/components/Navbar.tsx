@@ -5,21 +5,7 @@ import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
-
-const linksData = [
-  {
-    href: "#about",
-    title: "About",
-  },
-  {
-    href: "#projects",
-    title: "Projects",
-  },
-  {
-    href: "#contact",
-    title: "Contact",
-  },
-];
+import { linksData } from "../data/data";
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -61,7 +47,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {openNav ? <MenuOverlay links={linksData} /> : null}
+      {openNav ? (
+        <MenuOverlay openNav={openNav} setOpenNav={setOpenNav} />
+      ) : null}
     </nav>
   );
 };

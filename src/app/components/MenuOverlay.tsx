@@ -1,15 +1,17 @@
 import NavLink from "./NavLink";
+import { linksData } from "../data/data";
 
-interface Links {
-  href: string;
-  title: string;
-}
-
-const MenuOverlay = ({ links }: { links: Array<Links> }) => {
+const MenuOverlay = ({
+  openNav,
+  setOpenNav,
+}: {
+  openNav: boolean;
+  setOpenNav: Function;
+}) => {
   return (
     <ul className="flex h-screen z-50  flex-col py-4 items-center">
-      {links.map((link, index) => (
-        <li key={index}>
+      {linksData.map((link, index) => (
+        <li key={index} onClick={() => setOpenNav(!openNav)}>
           <NavLink href={link.href} title={link.title} />
         </li>
       ))}
