@@ -1,13 +1,7 @@
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useTransition } from "react";
+import Image from "next/image";
 
 const LangSelect = () => {
   //muestra el valor de locale que se encuentra activo
@@ -29,7 +23,7 @@ const LangSelect = () => {
       name="Idioma"
       defaultValue={localeActive}
       disabled={isPending}
-      className="bg-transparent py-2"
+      className="bg-transparent py-2 text-[#ADB7BE] text-2xl sm:text-xl "
     >
       <option value="en">English</option>
       <option value="es">Español</option>

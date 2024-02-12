@@ -12,6 +12,29 @@
   },
   "About": {
     "title": "About Me",
-    "description": "I`m a FullStack web developer with a passion for creating interactive and responsing web applications. I have experience working with: React,NextJs,Javascript,Typescript,Node,Express,HTML,CSS,Python,MogoDB, PostgreSQL, Git. I am a quick learner and i`m always looking to expand my knowledge and skill set. i am a team player and i`m excited to work with others to create amazing applications"
+    "description": "I`m a FullStack web developer with a passion for creating interactive and responsing web applications. I have experience working with: React,NextJs,Javascript,Typescript,Node,Express,HTML,CSS,Python,MogoDB, PostgreSQL, Git. I am a quick learner and i`m always looking to expand my knowledge and skill set. i am a team player and i`m excited to work with others to create amazing applications",
+    "tabs": {
+      "1": "Skills",
+      "2": "Education",
+      "3": "Experience"
+    }
+  },
+  "Projects": {
+    "title": "My Projects"
+  },
+  "Contact": {
+    "title": "Let`s Connect",
+    "info": "I`m currently looking for new opportunities, my inbox is always open. whether you have a question, or just want to say hi, I`ll try my best to get back to you.",
+    "formLabels": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "btn": "Send Message",
+      "plh-message": "let's talk about",
+      "plh-subject": "Just say hi...",
+      "plh-name": "Your Name",
+      "plh-email": "Your Email"
+    }
   }
 }

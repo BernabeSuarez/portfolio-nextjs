@@ -64,19 +64,19 @@ const AboutSection = () => {
                 }}
                 className=" mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-[#E45400] cursor-pointer"
               >
-                Skills
+                {t("tabs.1")}
               </span>
               <span
                 onClick={() => setShowTab("education")}
                 className=" mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-[#E45400] cursor-pointer"
               >
-                Education
+                {t("tabs.2")}
               </span>
               <span
                 onClick={() => setShowTab("certifications")}
                 className=" mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-[#E45400] cursor-pointer"
               >
-                Experience
+                {t("tabs.3")}
               </span>
             </div>
             <div className="mt-3">

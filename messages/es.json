@@ -12,6 +12,29 @@
   },
   "About": {
     "title": "Acerca de Mi",
-    "description": "Soy un desarrollador web fullstack apasionado por la creacion de aplicaciones web creativas y responsivas. Tengo experiencia trabajando con: React,NextJs,Javascript,Typescript,Node,Express,HTML,CSS,Python,MogoDB, PostgreSQL, Git. Aprendo rapido y siempre busco ampliar mis conocimientos y habilidades. Me adapto para trabajar en equipo, y me entusiasma trabajar con otros para crear aplicaciones increibles"
+    "description": "Soy un desarrollador web fullstack apasionado por la creacion de aplicaciones web creativas y responsivas. Tengo experiencia trabajando con: React,NextJs,Javascript,Typescript,Node,Express,HTML,CSS,Python,MogoDB, PostgreSQL, Git. Aprendo rapido y siempre busco ampliar mis conocimientos y habilidades. Me adapto para trabajar en equipo, y me entusiasma trabajar con otros para crear aplicaciones increibles",
+    "tabs": {
+      "1": "Habilidades",
+      "2": "Educacion",
+      "3": "Experiencia"
+    }
+  },
+  "Projects": {
+    "title": "Mis Proyectos"
+  },
+  "Contact": {
+    "title": "Contactame",
+    "info": "Actualmente estoy buscando nuevas oportunidades, cualquier consulta que tengas, cualquier inquietud no dejes de comunicarte conmigo, hare lo posible por responderte a la brevedad",
+    "formLabels": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "btn": "Enviar",
+      "plh-message": "Hablemos de algo...",
+      "plh-subject": "Solo di hola...",
+      "plh-name": "Tu Nombre",
+      "plh-email": "Tu Email"
+    }
   }
 }

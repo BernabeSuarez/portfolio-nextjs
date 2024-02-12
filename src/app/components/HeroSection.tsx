@@ -62,7 +62,7 @@ export default function Hero() {
                 id="dwnl-cv"
                 className="px-1 inline-block py-1 w-full sm:w-fit rounded-full md:rounded-xl bg-gradient-to-br from-[#FFBE98] via-[#E45400] to bg-[#F24949]  text-white mt-3"
               >
-                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full md:rounded-lg px-5 py-2">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full md:rounded-xl px-5 py-2">
                   {t("btnDownload")}
                 </span>
               </button>

@@ -3,6 +3,7 @@
 import ProjectCard from "./ProjectCard";
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const ProjectsData = [
   {
@@ -51,11 +52,12 @@ const cardAnimationVariants = {
 const ProjectSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); //una vez que esta en la vista se vuelve true
+  const t = useTranslations("Projects");
 
   return (
     <section className="flex flex-col justify-center" id="projects">
       <h2 className="text-center text-4xl font-semibold mb-4 text-white">
-        My Projects
+        {t("title")}
       </h2>
       <ul ref={ref} className="grid grid-cols-1 md:grid-cols-3  gap-8">
         {ProjectsData.map((project, index) => (
