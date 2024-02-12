@@ -1,8 +1,17 @@
 {
+  "Navbar": {
+    "1": "About",
+    "2": "Projects",
+    "3": "Contact"
+  },
   "Hero": {
     "title": "Hello I`m",
     "description": "",
     "btnContact": "Contact me",
     "btnDownload": "Download CV"
+  },
+  "About": {
+    "title": "About Me",
+    "description": "I`m a FullStack web developer with a passion for creating interactive and responsing web applications. I have experience working with: React,NextJs,Javascript,Typescript,Node,Express,HTML,CSS,Python,MogoDB, PostgreSQL, Git. I am a quick learner and i`m always looking to expand my knowledge and skill set. i am a team player and i`m excited to work with others to create amazing applications"
   }
 }

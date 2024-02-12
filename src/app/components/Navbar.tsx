@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 import { linksData } from "../data/data";
+import LangSelect from "./LangSelect";
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
         >
           <Image src="/images/logo-web.png" alt="logo" width={70} height={70} />
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="mobile-menu block md:hidden ">
           {!openNav ? (
             <button
               id="hamb-menu-open"
@@ -38,12 +39,15 @@ const Navbar = () => {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row justify-between md:space-x-8">
+          <ul className="flex p-4 md:p-0 md:flex-row justify-between md:space-x-8 items-center">
             {linksData.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.href} title={link.title} />
               </li>
             ))}
+            <li>
+              <LangSelect />
+            </li>
           </ul>
         </div>
       </div>

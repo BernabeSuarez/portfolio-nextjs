@@ -2,6 +2,7 @@
 import { useState } from "react";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const info = [
   {
@@ -35,6 +36,7 @@ const info = [
 
 const AboutSection = () => {
   const [showTab, setShowTab] = useState("skills");
+  const t = useTranslations("About");
 
   function showInfo(id: string) {
     setShowTab(id);
@@ -50,13 +52,10 @@ const AboutSection = () => {
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-semibold mb-4 text-white">About Me</h2>
-          <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            iusto fugit et sunt libero temporibus, blanditiis quod illum nam
-            odit, quidem repellendus doloremque ex dolorem ipsa asperiores quos
-            culpa est.
-          </p>
+          <h2 className="text-4xl font-semibold mb-4 text-white">
+            {t("title")}
+          </h2>
+          <p className=" lg:text-lg text-left ">{t("description")}</p>
           <div className="flex flex-col mt-8">
             <div className="">
               <span
