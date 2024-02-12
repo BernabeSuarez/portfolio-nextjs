@@ -40,10 +40,7 @@ export default function Hero() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            laborum esse, repellat quo molestiae vero. Vel ullam vero deleniti
-            beatae, laborum quia dicta sit ipsa quidem in, corrupti, doloremque
-            id.
+            {t("description")}
           </p>
           <div>
             <a href="https://wa.me/5492364513422" target="_blank">
