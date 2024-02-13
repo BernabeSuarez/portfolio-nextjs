@@ -59,7 +59,7 @@ const ProjectSection = () => {
       <h2 className="text-center text-4xl font-semibold mb-4 text-white">
         {t("title")}
       </h2>
-      <ul ref={ref} className="grid grid-cols-1 md:grid-cols-3  gap-8">
+      <ul ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-8 m-auto">
         {ProjectsData.map((project, index) => (
           <motion.li
             key={index}

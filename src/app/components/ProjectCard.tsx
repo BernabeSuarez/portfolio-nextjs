@@ -10,7 +10,7 @@ interface ICardData {
 const ProjectCard = (carData: ICardData) => {
   return (
     <a href={carData.href} target="_blank">
-      <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
+      <div className="group relative m-0 flex h-72 w-72 sm:w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
         <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
           <Image
             src={carData.imgUrl}

@@ -23,10 +23,10 @@ const LangSelect = () => {
       name="Idioma"
       defaultValue={localeActive}
       disabled={isPending}
-      className="bg-transparent py-2 text-[#ADB7BE] text-2xl sm:text-xl "
+      className="bg-transparent py-2 text-[#ADB7BE] text-md "
     >
-      <option value="en">English</option>
-      <option value="es">Español</option>
+      <option value="en">EN</option>
+      <option value="es">ES</option>
     </select>
   );
 };

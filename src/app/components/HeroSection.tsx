@@ -9,13 +9,13 @@ export default function Hero() {
   const t = useTranslations("Hero");
   // eslint-disable-next-line react/no-unescaped-entities
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16 ">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, x: 70 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className=" col-span-8 place-self-center"
+          className=" col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold text-center lg:text-left">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBE98] to bg-[#E45400]">
