@@ -4,7 +4,6 @@ import AboutSection from "../components/AboutSection";
 import ProjectSection from "../components/ProjectSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
   return (

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Skills from "./Skills";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -42,11 +43,12 @@ export default function Hero() {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             {t("description")}
           </p>
+          <Skills />
           <div>
             <a href="https://wa.me/5492364513422" target="_blank">
               <button
                 id="contact-btn"
-                className="px-6 inline-block py-3 w-full sm:w-fit  sm:rounded-xl rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6"
+                className="px-4 inline-block py-2.5 w-full sm:w-fit  sm:rounded-md rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6"
               >
                 {t("btnContact")}
               </button>
@@ -57,9 +59,9 @@ export default function Hero() {
             >
               <button
                 id="dwnl-cv"
-                className="px-1 inline-block py-1 w-full sm:w-fit rounded-full md:rounded-xl bg-gradient-to-br from-[#FFBE98] via-[#E45400] to bg-[#F24949]  text-white mt-3"
+                className="px-0.5 inline-block py-0.5 w-full sm:w-fit  sm:rounded-md rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6"
               >
-                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full md:rounded-xl px-5 py-2">
+                <span className="h-full w-full block bg-[#121212] hover:bg-slate-800 rounded-full md:rounded-md px-5 py-2">
                   {t("btnDownload")}
                 </span>
               </button>
