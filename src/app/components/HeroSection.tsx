@@ -10,13 +10,13 @@ export default function Hero() {
   const t = useTranslations("Hero");
   // eslint-disable-next-line react/no-unescaped-entities
   return (
-    <section className="lg:py-16 ">
+    <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, x: 70 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className=" col-span-8 place-self-center text-center sm:text-left justify-self-start"
+          className="col-span-8 text-center sm:text-left "
         >
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold text-center lg:text-left">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBE98] to bg-[#E45400]">
@@ -48,7 +48,7 @@ export default function Hero() {
             <a href="https://wa.me/5492364513422" target="_blank">
               <button
                 id="contact-btn"
-                className="px-4 inline-block py-2.5 w-full sm:w-fit  sm:rounded-md rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-6 mt-6"
+                className="px-4 inline-block py-2.5 w-full sm:w-fit  sm:rounded-md rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-2 mt-6"
               >
                 {t("btnContact")}
               </button>
@@ -72,15 +72,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 70 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mt-5"
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <Image
-            src="/images/hero-image.jpg"
-            alt="Hero Image"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full "
-            width={300}
-            height={300}
-          />
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <Image
+              src="/images/hero-image.jpg"
+              alt="Hero Image"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full "
+              width={350}
+              height={350}
+            />
+          </div>
         </motion.div>
       </div>
     </section>
