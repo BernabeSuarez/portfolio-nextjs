@@ -41,6 +41,13 @@ const ProjectsData = [
     imgUrl: "/images/web-personal.jpeg",
     href: "https://django-auth-crud-9mr9.onrender.com/",
   },
+  {
+    id: 6,
+    title: "Chatbot",
+    description: "Chatbot con Python, integrando Gemini AI",
+    imgUrl: "/images/project-chat.png",
+    href: "https://bernabesuarez-chat-bot-py-geminiai-main-sokymo.streamlit.app/",
+  },
 ];
 
 //Agregarun filtro por el tipo de proyecto

@@ -47,7 +47,7 @@ const Skills = () => {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ ease: "easeOut", duration: 2 }}
-      className=" flex flex-row  items-center w-96 sm:m-auto"
+      className=" flex flex-row  items-center w-96 "
     >
       {icons.map((icon, index) => (
         <Image
