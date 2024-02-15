@@ -11,6 +11,8 @@ const info = [
       <ul>
         <li>React</li>
         <li>Next Js</li>
+        <li>Python</li>
+        <li>TypeScript</li>
       </ul>
     ),
   },
@@ -20,18 +22,20 @@ const info = [
       <ul>
         <li>Nucba</li>
         <li>Argentina Programa4.0</li>
+        <li>Codo a Codo</li>
+        <li>FreeCodeCamp</li>
       </ul>
     ),
   },
-  {
-    id: "certifications",
-    content: (
-      <ul>
-        <li>certificado 1</li>
-        <li>certificado 2</li>
-      </ul>
-    ),
-  },
+  // {
+  //   id: "certifications",
+  //   content: (
+  //     <ul>
+  //       <li>certificado 1</li>
+  //       <li>certificado 2</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -72,12 +76,12 @@ const AboutSection = () => {
               >
                 {t("tabs.2")}
               </span>
-              <span
+              {/* <span
                 onClick={() => setShowTab("certifications")}
                 className=" mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-[#E45400] cursor-pointer"
               >
                 {t("tabs.3")}
-              </span>
+              </span> */}
             </div>
             <div className="mt-3">
               {info.find((t) => t.id === showTab)?.content}
