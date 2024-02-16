@@ -39,7 +39,7 @@ const ProjectsData = [
     title: "Portfolio",
     description: "Portfolio personal",
     imgUrl: "/images/web-personal.jpeg",
-    href: "https://django-auth-crud-9mr9.onrender.com/",
+    href: "https://portfolio-eta-opal-66.vercel.app/en",
   },
   {
     id: 6,
