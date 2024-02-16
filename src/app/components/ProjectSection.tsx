@@ -15,7 +15,7 @@ const ProjectsData = [
   },
   {
     id: 2,
-    title: "Angula Weather App",
+    title: "Angular Weather App",
     description: "Aplicacion del clima",
     imgUrl: "/images/project-angular.png",
     href: "https://angular-weather-app-eight.vercel.app/",
@@ -39,7 +39,7 @@ const ProjectsData = [
     title: "Portfolio",
     description: "Portfolio personal",
     imgUrl: "/images/web-personal.jpeg",
-    href: "https://portfolio-eta-opal-66.vercel.app/en",
+    href: "https://bernabesuarez.vercel.app/en",
   },
   {
     id: 6,
