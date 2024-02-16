@@ -50,7 +50,7 @@ export default function Hero() {
                 aria-labelledby="contact-btn"
                 name="contact-btn"
                 id="contact-btn"
-                className="px-4 inline-block py-2.5 w-full sm:w-fit  sm:rounded-md rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-white mb-2 mt-6"
+                className="px-4 inline-block py-2.5 w-full sm:w-fit  sm:rounded-md rounded-full mr-4  bg-gradient-to-br from-[#FFBE98] via-[#e45400] to bg-[#F24949] text-black mb-2 mt-6"
               >
                 {t("btnContact")}
               </button>
