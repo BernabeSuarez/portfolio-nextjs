@@ -19,6 +19,7 @@ const LangSelect = () => {
 
   return (
     <select
+      aria-labelledby="lang"
       onChange={onSelectChange}
       name="Idioma"
       defaultValue={localeActive}
