@@ -94,7 +94,7 @@ const ContactSection = () => {
           <button
             id="send-mail"
             type="submit"
-            className="bg-[#e45400] hover:bg-[#f24949] text-white rounded-md mt-4 h-10 "
+            className="bg-[#e45400] hover:bg-[#f24949] text-black rounded-md mt-4 h-10 "
             aria-labelledby="send-form"
             name="send-mail"
           >
