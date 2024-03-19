@@ -48,6 +48,14 @@ const ProjectsData = [
     imgUrl: "/images/project-chat.png",
     href: "https://bernabesuarez-chat-bot-py-geminiai-main-sokymo.streamlit.app/",
   },
+  {
+    id: 7,
+    title: "Transcripciones de voz a texto",
+    description:
+      "Transcripciones de voz a texto, con opcion de copiar al portapapeles",
+    imgUrl: "/images/project-transcript.png",
+    href: "https://transcripciones.vercel.app/",
+  },
 ];
 
 //Agregarun filtro por el tipo de proyecto
