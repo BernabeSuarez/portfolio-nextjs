@@ -1,23 +1,43 @@
+"use client";
 import LinkedInIcon from "../../../public/linkedin-icon.png";
 import GithubIcon from "../../../public/github-icon.png";
 import Image from "next/image";
 import { sendMail } from "../lib/mail";
 import { useTranslations } from "next-intl";
-
-const handleSubmit = async (formData: FormData) => {
-  "use server";
-  //Tomar los datos del Form
-
-  await sendMail({
-    email: formData.get("email") as string,
-    name: formData.get("name") as string,
-    subject: formData.get("subject") as string,
-    message: formData.get("message") as string,
-  });
-};
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
   const t = useTranslations("Contact");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    //Tomar los datos del Form
+
+    const templateParams = {
+      user_name: name,
+      message: message,
+      user_email: email,
+    };
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID ?? ""
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section
       id="contact"
@@ -39,7 +59,7 @@ const ContactSection = () => {
         </div>
       </div>
       <div>
-        <form action={handleSubmit} className="flex flex-col gap-2">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-2">
           <label
             htmlFor="name"
             className="text-white block text-sm font-medium"
@@ -47,11 +67,12 @@ const ContactSection = () => {
             {t("formLabels.name")}
           </label>
           <input
-            name="name"
+            name="user_name"
             type="text"
-            id="name"
+            id="user_name"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-name")}
+            onChange={(e) => setName(e.target.value)}
           />
           <label
             htmlFor="email"
@@ -60,11 +81,12 @@ const ContactSection = () => {
             {t("formLabels.email")}
           </label>
           <input
-            name="email"
+            name="user_email"
             type="email"
-            id="email"
+            id="user_email"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-email")}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <label
             htmlFor="subject"
@@ -90,6 +112,7 @@ const ContactSection = () => {
             id="message"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-message")}
+            onChange={(e) => setMessage(e.target.value)}
           />
           <button
             id="send-mail"
