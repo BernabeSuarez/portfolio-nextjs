@@ -2,41 +2,53 @@
 import LinkedInIcon from "../../../public/linkedin-icon.png";
 import GithubIcon from "../../../public/github-icon.png";
 import Image from "next/image";
-import { sendMail } from "../lib/mail";
 import { useTranslations } from "next-intl";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
 
 const ContactSection = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
   const t = useTranslations("Contact");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     //Tomar los datos del Form
-
-    const templateParams = {
-      user_name: name,
-      message: message,
-      user_email: email,
-    };
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
-        templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID ?? ""
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
+    if (email.length < 1) {
+      toast.error("Por favor ingrese un email");
+    } else if (message.length < 1) {
+      toast.error("Por favor escriba un mensaje...");
+    } else {
+      const templateParams = {
+        from_name: name,
+        message: message,
+        user_email: email,
+        from_subject: subject,
+      };
+      emailjs
+        .send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+          templateParams,
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID ?? ""
+        )
+        .then(
+          () => {
+            toast.success("Mensaje Enviado!"); // Displays a success message
+          },
+          (error) => {
+            console.log("FAILED...", error);
+            toast.error("A ocurrido un error!, por favor intente mas tarde");
+          }
+        );
+      setEmail("");
+      setMessage("");
+      setName("");
+      setSubject("");
+    }
   };
   return (
     <section
@@ -72,6 +84,7 @@ const ContactSection = () => {
             id="user_name"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-name")}
+            value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <label
@@ -86,6 +99,7 @@ const ContactSection = () => {
             id="user_email"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-email")}
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <label
@@ -100,6 +114,8 @@ const ContactSection = () => {
             id="subject"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-subject")}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
           />
           <label
             htmlFor="message"
@@ -112,6 +128,7 @@ const ContactSection = () => {
             id="message"
             className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
             placeholder={t("formLabels.plh-message")}
+            value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
           <button
