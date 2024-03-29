@@ -55,10 +55,7 @@ export default function Hero() {
                 {t("btnContact")}
               </button>
             </a>
-            <a
-              href="/BernabeSuarez-cv-2024.pdf"
-              download="BernabeSuarez-cv-2024.pdf"
-            >
+            <a href="/BernabeSuarez.pdf" download="BernabeSuarez.pdf">
               <button
                 aria-labelledby="download-cv"
                 name="dwnl-cv"
