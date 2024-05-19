@@ -4,8 +4,10 @@ import GithubIcon from "../../../public/github-icon.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactSection = () => {
   const [email, setEmail] = useState("");
@@ -14,6 +16,9 @@ const ContactSection = () => {
   const [subject, setSubject] = useState("");
   const t = useTranslations("Contact");
 
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     //Tomar los datos del Form
@@ -55,7 +60,7 @@ const ContactSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
     >
-      <div className="mb-12">
+      <div className="mb-12" data-aos="zoom-in-right">
         <h2 className="text-xl font-bold my-2 text-white">{t("title")}</h2>
         <p className="text-[#ADB7BE] mb-4 max-w-md">{t("info")}</p>
         <div className="social flex flex-row gap-2">
@@ -71,7 +76,11 @@ const ContactSection = () => {
         </div>
       </div>
       <div>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-2"
+          data-aos="zoom-in-left"
+        >
           <label
             htmlFor="name"
             className="text-white block text-sm font-medium"

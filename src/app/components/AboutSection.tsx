@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const info = [
   {
@@ -42,24 +44,33 @@ const AboutSection = () => {
   const [showTab, setShowTab] = useState("skills");
   const t = useTranslations("About");
 
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
   function showInfo(id: string) {
     setShowTab(id);
   }
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap sm:py-16 xl:py-16">
+      <div className="md:grid md:grid-cols-2 gap-8 py-8 px-1 md:px-4 xl:gap sm:py-16 xl:py-16">
         <Image
           src="/images/hero-vector.svg"
           alt="desktop"
           className=""
           width={480}
           height={480}
+          data-aos="fade-down-right"
         />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div
+          className="mt-4 md:mt-0 md:text-left text-center flex flex-col h-full"
+          data-aos="fade-down-left"
+        >
           <h2 className="text-4xl font-semibold mb-4 text-white">
             {t("title")}
           </h2>
-          <p className=" lg:text-lg text-left ">{t("description")}</p>
+          <p className=" lg:text-lg text-justify md:text-left">
+            {t("description")}
+          </p>
           <div className="flex flex-col mt-8">
             <div className="">
               <span
