@@ -10,7 +10,7 @@ export default function Hero() {
   const t = useTranslations("Hero");
   // eslint-disable-next-line react/no-unescaped-entities
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16 w-full">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, x: 70 }}

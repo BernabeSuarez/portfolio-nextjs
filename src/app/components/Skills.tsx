@@ -47,15 +47,15 @@ const Skills = () => {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ ease: "easeOut", duration: 2 }}
-      className=" flex flex-row  items-center w-96 "
+      className=" flex flex-row  items-center w-full "
     >
       {icons.map((icon, index) => (
         <Image
           key={index}
           src={icon.url}
           alt={icon.alt}
-          width={35}
-          height={35}
+          width={30}
+          height={30}
         />
       ))}
     </motion.div>
