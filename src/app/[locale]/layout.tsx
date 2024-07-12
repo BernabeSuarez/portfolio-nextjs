@@ -26,6 +26,10 @@ export default function RootLayout({
   const messages = useMessages();
   return (
     <html lang={locale}>
+      <meta
+        name="google-site-verification"
+        content="gspA0M6MQLnkIlZvVxWwQSOSx-RFBHPp2YR1eseujYI"
+      />
       <NextIntlClientProvider messages={messages}>
         <body className={inter.className}>
           <Navbar />
