@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Portfolio Personal - Bernabe Suarez
+Bienvenido/a a mi portafolio personal. Este repositorio contiene el código fuente de mi sitio web, que puedes visitar en bernabesuarez.vercel.app.
 
-## Getting Started
+Descripción
+Este portafolio es una representación de mi experiencia, habilidades y proyectos. Está diseñado para mostrar de manera clara y atractiva mis capacidades como desarrollador y los proyectos en los que he trabajado.
 
-First, run the development server:
+Tecnologías Utilizadas
 
-```bash
+Next.js: Framework utilizado para el renderizado del sitio y la optimización del rendimiento.
+Vercel: Para la implementación y alojamiento del sitio web.
+Características
+Responsive Design: El diseño es completamente adaptable a diferentes tamaños de pantalla, desde dispositivos móviles hasta pantallas de escritorio.
+Proyectos Destacados: Sección de proyectos donde se pueden ver los trabajos más importantes en los que he participado.
+Información Personal: Una breve introducción sobre mí, mi experiencia y cómo contactarme.
+Instalación
+Si deseas clonar este repositorio y ejecutarlo localmente, sigue estos pasos:
+
+Clona este repositorio:
+
+bash
+Copiar código
+git clone https://github.com/tu-usuario/tu-repositorio.git
+Ve al directorio del proyecto:
+
+bash
+Copiar código
+cd tu-repositorio
+Instala las dependencias:
+
+bash
+Copiar código
+npm install
+Ejecuta la aplicación en modo de desarrollo:
+
+bash
+Copiar código
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Abre http://localhost:3000 en tu navegador para ver el sitio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contribución
+Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna sugerencia para mejorar, por favor abre un issue o envía un pull request.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contacto
+Si deseas ponerte en contacto conmigo, puedes hacerlo a través de mi LinkedIn o enviando un correo a bernabesuarez2022@gmail.com.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
