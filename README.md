@@ -15,27 +15,6 @@ Información Personal: Una breve introducción sobre mí, mi experiencia y cómo
 Instalación
 Si deseas clonar este repositorio y ejecutarlo localmente, sigue estos pasos:
 
-## Clona este repositorio:
-
-bash
-Copiar código
-git clone https://github.com/tu-usuario/tu-repositorio.git
-Ve al directorio del proyecto:
-
-bash
-Copiar código
-cd tu-repositorio
-Instala las dependencias:
-
-bash
-Copiar código
-npm install
-Ejecuta la aplicación en modo de desarrollo:
-
-bash
-Copiar código
-npm run dev
-Abre http://localhost:3000 en tu navegador para ver el sitio.
 
 ## Contribución
 Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna sugerencia para mejorar, por favor abre un issue o envía un pull request.
