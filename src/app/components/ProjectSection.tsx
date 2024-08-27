@@ -56,6 +56,14 @@ const ProjectsData = [
     imgUrl: "/images/project-transcript.png",
     href: "https://transcripciones.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Dolar App",
+    description:
+      "Aplicacion de cotizaciones del dolar en argentina, momentaneamente en prueba cerrada de Google Play Store",
+    imgUrl: "/images/react-native.png",
+    href: "https://github.com/BernabeSuarez/react-native-dolarApp",
+  },
 ];
 
 //Agregarun filtro por el tipo de proyecto

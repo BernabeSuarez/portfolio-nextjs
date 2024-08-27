@@ -6,13 +6,13 @@
   },
   "Hero": {
     "title": "Hello, I`m",
-    "description": "Fullstack web developer, React, NextJs, and Python developer",
+    "description": "Fullstack web developer, React, React Native, NextJs, and Python developer",
     "btnContact": "Contact me",
     "btnDownload": "Download CV"
   },
   "About": {
     "title": "About Me",
-    "description": "I`m a FullStack web developer with a passion for creating interactive and responsing web applications. I have experience working with: React, NextJs, Typescript, Python, Git. I am a quick learner and i`m always looking to expand my knowledge and skill set. i am a team player and i`m excited to work with others to create amazing applications",
+    "description": "I`m a FullStack web developer with a passion for creating interactive and responsing web applications. I have experience working with: React, React Native, NextJs, Typescript, Python, Git. I am a quick learner and i`m always looking to expand my knowledge and skill set. i am a team player and i`m excited to work with others to create amazing applications",
     "tabs": {
       "1": "Skills",
       "2": "Education",
