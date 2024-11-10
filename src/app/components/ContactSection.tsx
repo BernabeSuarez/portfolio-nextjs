@@ -63,7 +63,14 @@ const ContactSection = () => {
       <div className="mb-12" data-aos="zoom-in-right">
         <h2 className="text-xl font-bold my-2 text-white">{t("title")}</h2>
         <p className="text-[#ADB7BE] mb-4 max-w-md">{t("info")}</p>
-        <div className="social flex flex-row gap-2">
+        <a
+          href="/guia-servicios.pdf"
+          download="Guia de servicios.pdf"
+          className="text-[#E45400] mb-12 mt-6"
+        >
+          {t("download_guide")}
+        </a>
+        <div className="social flex flex-row gap-2 mt-6">
           <a
             href="https://www.linkedin.com/in/bernabesuarez2022/"
             target="_blank"

@@ -8,7 +8,7 @@
     "title": "Hello, I`m",
     "description": "Fullstack web developer, React, React Native, NextJs, and Python developer",
     "btnContact": "Contact me",
-    "btnDownload": "Download CV"
+    "btnDownload": "Service guide"
   },
   "About": {
     "title": "About Me",
@@ -24,7 +24,8 @@
   },
   "Contact": {
     "title": "Let`s Connect",
-    "info": "I`m currently looking for new opportunities, my inbox is always open. whether you have a question, or just want to say hi, I`ll try my best to get back to you.",
+    "info": "You can find me at any time, my inbox will always be open. If you have any questions or just want to say hello, I will respond as soon as possible. You can also download the service guide to have a detailed view of what I can offer.",
+    "download_guide": "Download service guide",
     "formLabels": {
       "name": "Name",
       "email": "Email",

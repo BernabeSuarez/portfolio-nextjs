@@ -2,13 +2,13 @@
   "Navbar": {
     "1": "Info",
     "2": "Proyectos",
-    "3": "Contactos"
+    "3": "Contacto"
   },
   "Hero": {
     "title": "Hola, soy",
     "description": "Desarrollador web Fullstack, React, React Native, NextJs, Y desarrollador Python",
     "btnContact": "Contactarme",
-    "btnDownload": "Descargar CV"
+    "btnDownload": "Guia de servicios"
   },
   "About": {
     "title": "Acerca de Mi",
@@ -24,7 +24,8 @@
   },
   "Contact": {
     "title": "Contactame",
-    "info": "Actualmente estoy buscando nuevas oportunidades, cualquier consulta que tengas, cualquier inquietud no dejes de comunicarte conmigo, hare lo posible por responderte a la brevedad",
+    "info": "Puedes encontrarme en cualquier momento, mi bandeja de entrada siempre estara abierta. Si tienes alguna pregunta o simplemente quieres decir hola, te respondere lo antes posible.tambien puedes descargar la guia de servicios para tener una vision detallada sobre lo que puedo ofrecer.",
+    "download_guide": "Descargar guia de servicios",
     "formLabels": {
       "name": "Nombre",
       "email": "Email",
