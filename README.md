@@ -12,8 +12,6 @@ Características
 Responsive Design: El diseño es completamente adaptable a diferentes tamaños de pantalla, desde dispositivos móviles hasta pantallas de escritorio.
 Proyectos Destacados: Sección de proyectos donde se pueden ver los trabajos más importantes en los que he participado.
 Información Personal: Una breve introducción sobre mí, mi experiencia y cómo contactarme.
-Instalación
-Si deseas clonar este repositorio y ejecutarlo localmente, sigue estos pasos:
 
 
 ## Contribución
